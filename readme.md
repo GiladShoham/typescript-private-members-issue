@@ -77,7 +77,7 @@ I would expect TS to treat the d.ts file and the ts file which used to generate 
 │   │           │   ├── index.d.ts
 │   │           │   └── index.js
 │   │           ├── index.ts
-│   │           └── package.json
+│   │           └── package.json // contains types: "index.ts"
 │   ├── comp2
 │   │   ├── index.ts
 │   │   └── node_modules
