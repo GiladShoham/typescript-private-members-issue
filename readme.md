@@ -65,6 +65,63 @@ The code for comp1, comp2, person is identical in all cases.
 
 I would expect TS to treat the d.ts file and the ts file which used to generate this d.ts the same way.
 
+## File Structure
+```
+.
+├── non-working
+│   ├── comp1
+│   │   ├── index.ts
+│   │   └── node_modules
+│   │       └── person
+│   │           ├── dist
+│   │           │   ├── index.d.ts
+│   │           │   └── index.js
+│   │           ├── index.ts
+│   │           └── package.json
+│   ├── comp2
+│   │   ├── index.ts
+│   │   └── node_modules
+│   │       └── person
+│   │           ├── dist
+│   │           │   ├── index.d.ts
+│   │           │   └── index.js
+│   │           ├── index.ts
+│   │           └── package.json
+│   ├── package.json
+│   └── tsconfig.json
+├── package-lock.json
+├── package.json
+├── person
+│   ├── dist
+│   │   ├── index.d.ts
+│   │   └── index.js
+│   ├── index.ts
+│   ├── package.json
+│   └── tsconfig.json
+├── readme.md
+└── working
+    ├── comp1
+    │   ├── index.ts
+    │   └── node_modules
+    │       └── person
+    │           ├── dist
+    │           │   ├── index.d.ts
+    │           │   └── index.js
+    │           ├── index.ts
+    │           └── package.json
+    ├── comp2
+    │   ├── index.ts
+    │   └── node_modules
+    │       └── person
+    │           ├── dist
+    │           │   ├── index.d.ts
+    │           │   └── index.js
+    │           ├── index.ts
+    │           └── package.json
+    ├── package.json
+    └── tsconfig.json
+```
+
 ## Compile person 
 If you want to generate js and d.ts files of person just go into the person folder and run compile.
 
