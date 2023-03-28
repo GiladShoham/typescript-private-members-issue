@@ -1,0 +1,15 @@
+{
+  "name": "ts-bug",
+  "version": "1.0.0",
+  "description": "This repo aims to demonstrate an issue in Typescript. Where TS treat differently private members of a class when reading the type from a ts file vs reading it from a `d.ts` file (which were generated from that ts file).",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
